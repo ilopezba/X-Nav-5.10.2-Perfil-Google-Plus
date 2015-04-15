@@ -43,9 +43,9 @@
       function makeApiCall() {
         gapi.client.load('plus', 'v1', function() {
           var request = gapi.client.plus.people.get({
-            'userId': '109042423605704727570'
+            //'userId': '109042423605704727570'
             // For instance: 
-            // 'userId': '+GregorioRobles'
+             'userId': '+GregorioRobles'
           });
           request.execute(function(resp) {
             var heading = document.createElement('h4');
